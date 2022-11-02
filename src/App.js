@@ -1,25 +1,76 @@
-import logo from './logo.svg';
 import './App.css';
+import { useEffect } from 'react'
+import { Route, Routes} from 'react-router-dom'
+import { connect } from 'react-redux'
+import mapStateToProps from './redux/mapStateToProps'
+import mapDispatchToProps from './redux/mapDispatchToProps'
+import CharSelect from './components/CharSelect';
+import Game from './components/Game';
 
-function App() {
+function App({
+  loadCharacters, 
+  turns, setTurns, 
+  cards, setCards, 
+  selectedCharacters, setSelectedCharacters
+}) {
+
+  //local Storage loads and saves
+  //load characters, turns, selected characters, cards
+  useEffect(() => {
+    loadCharacters()
+    if (Storage) {
+      //localStorage.clear()
+      //load turns
+      let turnsString = localStorage.getItem("turns")
+      if(turnsString !== null && turnsString !== undefined){
+        setTurns(Number(JSON.parse(turnsString)))
+      }        
+      //load cards
+      let cardsString = localStorage.getItem("cards")
+      if (cardsString !== null && cardsString !== undefined) {
+          console.log(cardsString)
+          setCards(JSON.parse(cardsString))
+      }
+      //load selectedCharacters
+      let selectedCharactersString = localStorage.getItem("selectedCharacters")
+      if(selectedCharactersString != null && selectedCharactersString !== undefined){
+        setSelectedCharacters(JSON.parse(selectedCharactersString))
+      }
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+  //save turns
+  useEffect(() => {
+    localStorage.setItem("turns", JSON.stringify(turns))
+  },[turns])
+  //save cards
+  useEffect(() => {
+    console.log("setting cards:")
+    console.log(cards)
+    localStorage.setItem("cards", JSON.stringify(cards))
+  },[cards])
+  //save selected characters
+  useEffect(() => {
+    localStorage.setItem("selectedCharacters", JSON.stringify(selectedCharacters))
+  },[selectedCharacters])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div >
+      <h1>Jedi Memory Training</h1>
+      <Routes>
+        <Route path="/" element={(<CharSelect />)} />
+        <Route path="/game" element={(<Game />)} />
+      </Routes>
+    </div >
   );
 }
 
-export default App;
+export default connect(mapStateToProps, mapDispatchToProps)(App);
+
+//lotr database
+/* const config = {
+  headers: { Authorization: "Bearer UKcyepcILkKPy09mPz8F" }
+}; */
+/* axios.get('https://the-one-api.dev/v2/character',
+config
+).then((res) => console.log(res.data.docs[0])).catch(console.log) */

@@ -1,0 +1,43 @@
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0
+  }
+  .char {
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 206px;
+    height: 206px;
+  }
+
+  .char-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: 50% 0%;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .char:hover img {
+    transition: 0.5s ease;
+    opacity: 0.3;
+  }
+  .char:hover .overlay-text {
+    opacity: 1;
+  }
+  
+  .selected img{
+    transition: 0.5s ease;
+    opacity: 0.3;
+  }
+
+  .selected .overlay-text {
+    color: rgb(248, 213, 56);
+    opacity: 1;
+  }
