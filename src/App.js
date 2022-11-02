@@ -19,7 +19,8 @@ function App({
   useEffect(() => {
     loadCharacters()
     if (Storage) {
-      localStorage.clear()
+      console.log("I AM CHANGED")
+      //localStorage.clear()
       //load turns
       let turnsString = localStorage.getItem("turns")
       if(turnsString !== null && turnsString !== undefined){
