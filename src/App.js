@@ -19,7 +19,7 @@ function App({
   useEffect(() => {
     loadCharacters()
     if (Storage) {
-      console.log("I AM CHANGED")
+      console.log("I AM CHANGEDDDDD")
       //localStorage.clear()
       //load turns
       let turnsString = localStorage.getItem("turns")
@@ -29,7 +29,6 @@ function App({
       //load cards
       let cardsString = localStorage.getItem("cards")
       if (cardsString !== null && cardsString !== undefined) {
-          console.log(cardsString)
           setCards(JSON.parse(cardsString))
       }
       //load selectedCharacters
@@ -57,7 +56,7 @@ function App({
     <div >
       <h1>Jedi Memory Training</h1>
       <Routes>
-        <Route path="/JediMindTraining" element={(<CharSelect />)} />
+        <Route path="/" element={(<CharSelect />)} />
         <Route path="/game" element={(<Game />)} />
       </Routes>
     </div >

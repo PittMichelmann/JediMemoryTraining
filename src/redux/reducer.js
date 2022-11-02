@@ -13,7 +13,6 @@ const initState = {
 const reducer = (state = initState, action) => {
   switch (action.type) {
     case ACTION.SET_CARDS:
-
       return {
         ...state,
         cards: action.payload

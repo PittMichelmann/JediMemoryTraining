@@ -59,8 +59,6 @@ const mapDispatchToProps = (dispatch) => {
             })
         },
         setCards: (cards)=>{
-            console.log("dispatch setting cards")
-            console.log(cards)
             dispatch({
                 type: ACTION.SET_CARDS,
                 payload: cards
