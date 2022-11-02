@@ -1,6 +1,7 @@
-import axios from 'axios'
-import { BASE_URL } from '../assets/baseURL'
+/* import axios from 'axios'
+import { BASE_URL } from '../assets/baseURL' */
 import * as ACTION from '../redux/actionTypeStrings'
+import data from '../assets/db.json'
 
 const mapDispatchToProps = (dispatch) => {
     return {
@@ -37,14 +38,18 @@ const mapDispatchToProps = (dispatch) => {
             })
         },
         loadCharacters: () => {
-            dispatch(() => {
+            console.log(data)
+            dispatch(/* () => {
                 axios.get(`${BASE_URL}/characters`)
                     .then((res) => {
                         dispatch({
                             type: ACTION.LOAD_CHARACTERS,
                             payload: res.data
                         })
-                    })
+                    }) */
+                    {
+                    type: ACTION.LOAD_CHARACTERS,
+                    payload: data.characters
             })
         },
         setTurns: (turns)=>{
