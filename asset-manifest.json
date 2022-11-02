@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/JediMindTraining/static/css/main.f0b4fa31.css",
+    "main.js": "/JediMindTraining/static/js/main.9e0bc754.js",
+    "static/js/787.40ece6a3.chunk.js": "/JediMindTraining/static/js/787.40ece6a3.chunk.js",
+    "static/media/distantGalaxy.ttf": "/JediMindTraining/static/media/distantGalaxy.ee1b4a3597465caa4073.ttf",
+    "static/media/episode1.TTF": "/JediMindTraining/static/media/episode1.887af7bb8be62e8dbb2f.TTF",
+    "index.html": "/JediMindTraining/index.html",
+    "main.f0b4fa31.css.map": "/JediMindTraining/static/css/main.f0b4fa31.css.map",
+    "main.9e0bc754.js.map": "/JediMindTraining/static/js/main.9e0bc754.js.map",
+    "787.40ece6a3.chunk.js.map": "/JediMindTraining/static/js/787.40ece6a3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f0b4fa31.css",
+    "static/js/main.9e0bc754.js"
+  ]
+}
