@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/JediMemoryTraining/static/css/main.c00c434d.css",
-    "main.js": "/JediMemoryTraining/static/js/main.366be5fe.js",
+    "main.js": "/JediMemoryTraining/static/js/main.3fea999d.js",
     "static/js/787.40ece6a3.chunk.js": "/JediMemoryTraining/static/js/787.40ece6a3.chunk.js",
     "static/media/distantGalaxy.ttf": "/JediMemoryTraining/static/media/distantGalaxy.ee1b4a3597465caa4073.ttf",
     "static/media/episodeOne.ttf": "/JediMemoryTraining/static/media/episodeOne.887af7bb8be62e8dbb2f.ttf",
     "index.html": "/JediMemoryTraining/index.html",
     "main.c00c434d.css.map": "/JediMemoryTraining/static/css/main.c00c434d.css.map",
-    "main.366be5fe.js.map": "/JediMemoryTraining/static/js/main.366be5fe.js.map",
+    "main.3fea999d.js.map": "/JediMemoryTraining/static/js/main.3fea999d.js.map",
     "787.40ece6a3.chunk.js.map": "/JediMemoryTraining/static/js/787.40ece6a3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c00c434d.css",
-    "static/js/main.366be5fe.js"
+    "static/js/main.3fea999d.js"
   ]
 }
