@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/JediMemoryTraining/static/css/main.5d613bd2.css",
-    "main.js": "/JediMemoryTraining/static/js/main.ace8500a.js",
-    "static/js/787.40ece6a3.chunk.js": "/JediMemoryTraining/static/js/787.40ece6a3.chunk.js",
-    "static/media/distantGalaxy.ttf": "/JediMemoryTraining/static/media/distantGalaxy.ee1b4a3597465caa4073.ttf",
-    "static/media/episode1.TTF": "/JediMemoryTraining/static/media/episode1.887af7bb8be62e8dbb2f.TTF",
-    "index.html": "/JediMemoryTraining/index.html",
-    "main.5d613bd2.css.map": "/JediMemoryTraining/static/css/main.5d613bd2.css.map",
-    "main.ace8500a.js.map": "/JediMemoryTraining/static/js/main.ace8500a.js.map",
-    "787.40ece6a3.chunk.js.map": "/JediMemoryTraining/static/js/787.40ece6a3.chunk.js.map"
+    "main.css": "/static/css/main.568c1e84.css",
+    "main.js": "/static/js/main.2d2cfb5f.js",
+    "static/js/787.40ece6a3.chunk.js": "/static/js/787.40ece6a3.chunk.js",
+    "static/media/distantGalaxy.ttf": "/static/media/distantGalaxy.ee1b4a3597465caa4073.ttf",
+    "static/media/episode1.TTF": "/static/media/episode1.887af7bb8be62e8dbb2f.TTF",
+    "index.html": "/index.html",
+    "main.568c1e84.css.map": "/static/css/main.568c1e84.css.map",
+    "main.2d2cfb5f.js.map": "/static/js/main.2d2cfb5f.js.map",
+    "787.40ece6a3.chunk.js.map": "/static/js/787.40ece6a3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d613bd2.css",
-    "static/js/main.ace8500a.js"
+    "static/css/main.568c1e84.css",
+    "static/js/main.2d2cfb5f.js"
   ]
 }
