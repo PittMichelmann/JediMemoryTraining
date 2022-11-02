@@ -45,8 +45,6 @@ function App({
   },[turns])
   //save cards
   useEffect(() => {
-    console.log("setting cards:")
-    console.log(cards)
     localStorage.setItem("cards", JSON.stringify(cards))
   },[cards])
   //save selected characters
@@ -58,7 +56,7 @@ function App({
     <div >
       <h1>Jedi Memory Training</h1>
       <Routes>
-        <Route path="/" element={(<CharSelect />)} />
+        <Route path="/JediMindTraining" element={(<CharSelect />)} />
         <Route path="/game" element={(<Game />)} />
       </Routes>
     </div >
