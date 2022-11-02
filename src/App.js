@@ -19,7 +19,7 @@ function App({
   useEffect(() => {
     loadCharacters()
     if (Storage) {
-      console.log("I AM CHANGEDDDDD")
+      console.log("I AM CHANGED")
       //localStorage.clear()
       //load turns
       let turnsString = localStorage.getItem("turns")
@@ -56,8 +56,8 @@ function App({
     <div >
       <h1>Jedi Memory Training</h1>
       <Routes>
-        <Route path="/" element={(<CharSelect />)} />
-        <Route path="/game" element={(<Game />)} />
+        <Route exact path="/JediMemoryTraining" element={(<CharSelect />)} />
+        <Route path="/JediMemoryTraining/game" element={(<Game />)} />
       </Routes>
     </div >
   );

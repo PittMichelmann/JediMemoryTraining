@@ -33,7 +33,7 @@ function Game({
     return (
         <div className='Game'>
             <div className='button-row'>
-                <Link className='button-left' to='/'><button>Back</button></Link>
+                <Link className='button-left' to='/JediMemoryTraining/'><button>Back</button></Link>
                 <button className='button-center' onClick={createCards}>New Game</button>
             </div>
             <div className="card-grid">

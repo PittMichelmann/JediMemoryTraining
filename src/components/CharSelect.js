@@ -19,8 +19,7 @@ function CharSelect({ characters, selectedCharacters, setSelectedCharacters, cre
             {
                 selectedCharacters.length < 8 ?
                     <button className='disabled-button' disabled={true}>Characters: {selectedCharacters.length + "/8"}</button>
-                    : <Link to='/game'><button onClick={()=>{
-                        console.log('clicked')
+                    : <Link to='/JediMemoryTraining/game'><button onClick={()=>{
                         createCards()
                     }}>Start Game</button></Link>
             }

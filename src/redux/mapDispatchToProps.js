@@ -38,7 +38,7 @@ const mapDispatchToProps = (dispatch) => {
             })
         },
         loadCharacters: () => {
-            console.log(data)
+            console.log(data.characters)
             dispatch(/* () => {
                 axios.get(`${BASE_URL}/characters`)
                     .then((res) => {
