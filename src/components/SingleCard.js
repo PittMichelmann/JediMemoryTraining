@@ -16,7 +16,7 @@ function SingleCard({ handleChoice, card, flipped, disabled, matched }) {
                                 handleChoice(card)
                             }
                         }}
-                        src="/img/cover.png"
+                        src="/JediMemoryTraining/img/cover.png"
                         alt="card back"
                     />
                 </div>
